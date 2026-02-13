@@ -3,7 +3,7 @@ cask "repoguide" do
   name "repoguide"
   desc "Generate tree-sitter repository maps in TOON format"
   homepage "https://github.com/phobologic/repoguide"
-  version "1.0.0"
+  version "1.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "repoguide" do
   on_macos do
     on_intel do
       url "https://github.com/phobologic/repoguide/releases/download/v#{version}/repoguide_#{version}_darwin_amd64.tar.gz"
-      sha256 "6fa96092f4e3f53b6b5592b1d00b044799eca620762fab1f2e29cbada483e57d"
+      sha256 "d13fcf295f741b28dc5b2dfeef92edb5c41e0720dc5e5a985d26e99fe57b61db"
     end
     on_arm do
       url "https://github.com/phobologic/repoguide/releases/download/v#{version}/repoguide_#{version}_darwin_arm64.tar.gz"
-      sha256 "f9cfd652f4cf98c7821909502de79f400a0ae305a5bff8111ab87cd5578181da"
+      sha256 "5df60fc6d34a18ec99b9d800d17088788c68659dcf21eebcf78d76a8eed332e7"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/phobologic/repoguide/releases/download/v#{version}/repoguide_#{version}_linux_amd64.tar.gz"
-      sha256 "696d9c5c8db60ee6799881207f9b541ac258c5aaed0cb891c0db2fc2d756d43c"
+      sha256 "fa193c5d0914de94853392c67ef6493ba6956113bdb36e537b72b99e05b4cd08"
     end
     on_arm do
       url "https://github.com/phobologic/repoguide/releases/download/v#{version}/repoguide_#{version}_linux_arm64.tar.gz"
-      sha256 "fccc957098e5647bfba49387b2d5484291cd3194929aa3f3fde0847660b75726"
+      sha256 "ac38572f2aafb2e72d83bab28346178fac45f79d7e4fc25dd19f654a868fcbe0"
     end
   end
 
