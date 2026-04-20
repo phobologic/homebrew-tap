@@ -5,20 +5,20 @@
 class Permcop < Formula
   desc "A rule-based permission filter for Claude Code PreToolUse hooks."
   homepage "https://github.com/phobologic/permcop"
-  version "0.4.0"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/phobologic/permcop/releases/download/v0.4.0/permcop_0.4.0_darwin_amd64.tar.gz"
-      sha256 "94901865fbb4db41793b7e7ce0b1695836833ac2441f6f4e535814115fbe1aef"
+      url "https://github.com/phobologic/permcop/releases/download/v0.4.1/permcop_0.4.1_darwin_amd64.tar.gz"
+      sha256 "810f7fe41638d0c39c458f1ed440a8dc85deb55159dec557fcf42ed0b3d88ad7"
 
       define_method(:install) do
         bin.install "permcop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/phobologic/permcop/releases/download/v0.4.0/permcop_0.4.0_darwin_arm64.tar.gz"
-      sha256 "d7b8d2b81887b3e804595cb4a6b1499acde0263ae34a6e2ae62375a00380130a"
+      url "https://github.com/phobologic/permcop/releases/download/v0.4.1/permcop_0.4.1_darwin_arm64.tar.gz"
+      sha256 "dd8c9041a3d5824923ec00bcb731c16f0568796296568700c5391d79d0b78959"
 
       define_method(:install) do
         bin.install "permcop"
@@ -28,15 +28,15 @@ class Permcop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phobologic/permcop/releases/download/v0.4.0/permcop_0.4.0_linux_amd64.tar.gz"
-      sha256 "ad57fa0758636b0f05310958c09a5e321dd00536fb71f990d9f20232554e1ad4"
+      url "https://github.com/phobologic/permcop/releases/download/v0.4.1/permcop_0.4.1_linux_amd64.tar.gz"
+      sha256 "00c2bc6755d1b6bfd7e14157f1150372aeb3dfe1cb9d24d2e442cd4224a7d07d"
       define_method(:install) do
         bin.install "permcop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phobologic/permcop/releases/download/v0.4.0/permcop_0.4.0_linux_arm64.tar.gz"
-      sha256 "ba704a96154be4dee1c46e806dd40b7c39397f71f709ea90cb918ff994cc0a71"
+      url "https://github.com/phobologic/permcop/releases/download/v0.4.1/permcop_0.4.1_linux_arm64.tar.gz"
+      sha256 "832b1fd8397747bce8e573b832c0213b8f704c80686072b81cb193c0d7d11b02"
       define_method(:install) do
         bin.install "permcop"
       end
